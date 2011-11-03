@@ -5,11 +5,16 @@ A [giter8][g8] template for [Unfiltered][unfiltered] applications on Google App 
 * download google app engine SDK and set APPENGINE_SDK_HOME
 * install [giter8][g8]
 * using this template
+
     g8 regadas/unfiltered-gae-twitter-bootstrap
+    
 * run
+
     sbt
     jetty-run
+    
 * app engine deploy
+    
     sbt appengine:deploy
 
 ## defaults
