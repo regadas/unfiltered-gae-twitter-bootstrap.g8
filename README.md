@@ -33,4 +33,4 @@ A [giter8][g8] template for [Unfiltered][unfiltered] applications on Google App 
 [plugin-gae]: https://github.com/eed3si9n/sbt-appengine
 [g8]: http://github.com/n8han/giter8#readme
 [unfiltered]: http://github.com/n8han/unfiltered#readme
-[twitter] http://twitter.github.com/bootstrap/
+[twitter]: http://twitter.github.com/bootstrap/
