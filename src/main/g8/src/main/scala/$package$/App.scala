@@ -22,7 +22,7 @@ class App extends unfiltered.filter.Plan with Template {
           pred(palindrome, _ + " is not a palindrome") is
           required("missing palindrome")
       } yield vw(
-        <div class="alert-message error">
+        <div class="alert-message success">
           <p><strong>Yup. { int.get } is an integer and { word.get } is a palindrome.</strong></p>
         </div>)
       expected(params) orFail { fails =>
@@ -42,6 +42,9 @@ class App extends unfiltered.filter.Plan with Template {
   def view(params: Map[String, Seq[String]])(body: scala.xml.NodeSeq) = {
     def p(k: String) = params.get(k).flatMap { _.headOption } getOrElse ("")
     layout(Nil)(Nil)(
+      <div>
+        { body }
+      </div>
       <form method="POST" class="form-stacked">
         <div class="clearfix">
           <label for="integer">Integer</label>
